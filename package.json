@@ -6,7 +6,7 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lambtron/MEAN"
+    "url": "https://github.com/lambtron/segment-export-ui"
   },
   "engines": {
     "node": "0.10.22",

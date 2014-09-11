@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 <!-- ASSIGN OUR ANGULAR MODULE -->
-<html lang="en" ng-app="MEAN">
+<html lang="en" ng-app="segExport">
 <head>
 	<!-- META -->
 	<meta charset="utf-8">
@@ -20,13 +20,22 @@
 	<!-- SPELLS -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+	<script src="/bower_components/angular/angular.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-route.min.js"></script>
+	<script src="/bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+	<script src="/bower_components/moment/moment.js"></script>
+	<script src="/bower_components/angular-moment/angular-moment.js"></script>
 
 	<script src="/public/js/app.js"></script>
+	<script src="/public/js/config.js"></script>
 	<script src="/public/js/controllers.js"></script>
+
+	<!-- Relative routing for $locationProvider. -->
+	<base href="/">
 </head>
 
-<!-- SET THE CONTROLLER AND GET ALL TODOS WITH INITIALIZE FUNCTION -->
 <body>
+	<div ng-view>
+	</div>
 </body>
 </html>
