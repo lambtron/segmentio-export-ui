@@ -7,7 +7,7 @@ var request = require('request');
 var EXPORT_PATH = 'http://raw.segment.io/';
 
 // Public functions. ===========================================================
-module.exports = function (app) {
+module.exports = function (app, io) {
   // API =======================================================================
   app.post('/api/request', function (req, res) {
     var load = req.body.load;
